@@ -23,6 +23,8 @@
     "passport-local": "^1.0.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.20"
+    "nodemon": "^2.0.20",
+    "node-gyp": "^7.0.0"
+
   }
 }
