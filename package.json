@@ -8,8 +8,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js",
-    "postinstall": "node-gyp rebuild"
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
@@ -27,7 +26,6 @@
     "passport-local": "^1.0.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.20",
-    "node-gyp": "^7.0.0"
+    "nodemon": "^2.0.20"
   }
 }
