@@ -7,6 +7,8 @@ const app = express();
 const bcrypt = require('bcrypt');
 const mongoose = require('mongoose');
 const User = require('./user');
+const port = process.env.PORT || 8080;
+
 
 
 app.use(bodyParser.json());
@@ -61,3 +63,7 @@ app.listen(3000, function () {
     console.log('server started');
 })
 module.exports = app;
+
+app.listen(port, () => {
+    console.log(`Server is running on port ${port}`);
+  });
