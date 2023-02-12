@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- Add the bootstrap CSS file -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/album/">
+    <link href="style.css" rel="stylesheet">
+    <link href="signin.css" rel="stylesheet">
+
+    
+
+
+    <!-- Bootstrap core CSS -->
+<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .bd-placeholder-img {
+          font-size: 1.125rem;
+          text-anchor: middle;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          user-select: none;
+        }
+  
+        @media (min-width: 768px) {
+          .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+          }
+        }
+      </style>
+    <title>Course Detail Page</title>
+  </head>
+
+
+<body>
+
+    <header> 
+        <nav class="navbar navbar-expand-lg navbar-dark bg-light" style="background-color: #FFFAFA; color: white;">
+          <div class="container-fluid" style="padding: 1px; margin: 20px;">
+            <button class="navbar-toggler" type="button" onclick="toggleNav()" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="corsi.html">Corsi</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="authenticate.html">Login</a>
+                </li>
+              </ul>
+              <a class="d-flex"> 
+                <img src="ValerioViale_h_black-RGB.png" style="margin: auto; max-height: none;
+          width: 10rem; height: auto;" href="#">
+          </a>
+            </div>
+          </div>
+        </nav>
+      </header>
+      
+      <script>
+        function toggleNav() {
+          const navbarContent = document.getElementById("navbarSupportedContent");
+          if (navbarContent.style.display === "block") {
+            navbarContent.style.display = "none";
+          } else {
+            navbarContent.style.display = "block";
+          }
+        }
+      </script>
+      
+
+<!-- Hero section -->
+<section id="hero" style="min-width: 585px; min-height: 400px;">
+    <div class="container">
+      <div class="row">
+        <div class="col" style="text-align: justify;">
+          <h1>Corso<br>completo di Programmazione</h1>
+          <p>          Impara a programmare, HTML, CSS, JavaScript, Python dall’autore dei popolari corsi Online. Con oltre 20,000 studenti iscritti!
+          </p>
+          
+          <a href="register.html" class="btn btn-light " style="width: 50%; border-radius: 20px;"> Compra €199 </a>
+          <div class="col-md-4">
+       
+          </div>
+        </div>
+        <div class="col img-col">
+        </div>
+      </div>
+      <div class="row cards">
+  
+      </div>
+    </div>
+  </section>
+  <!-- End Hero section -->
+
+
+
+
+
+  <div class="container">
+    <div class="text-left my-5" style="width: 100%; margin: 0 auto;"> 
+      <h3 class="text-center my-5">Course Contents</h3>
+              <div class="chapters"> 
+                <div class="col-xl-8 mx-auto">
+        <h3 class="text-secondary chapter-header">Chapter 1 - HTML and CSS</h3>
+        <ul class="list-group chapter-content">
+          <li class="list-group-item">Introduction</li>
+          <li class="list-group-item">Structure of an HTML Page</li>
+          <li class="list-group-item">Metatags and Images</li>
+          <li class="list-group-item">Chapter 1 Quiz</li>
+        </ul>
+        <h3 class="text-secondary chapter-header">Chapter 2 - HTML and CSS</h3>
+        <ul class="list-group chapter-content">
+          <li class="list-group-item">Sizing Images</li>
+          <li class="list-group-item">Text Color, Background Color, Border Color</li>
+          <li class="list-group-item">Formatting</li>
+          <li class="list-group-item">Chapter 2 Quiz</li>
+        </ul>
+        <h3 class="text-secondary chapter-header">Chapter 3 - HTML and CSS</h3>
+        <ul class="list-group chapter-content">
+          <li class="list-group-item">Ordered and Unordered Lists and Element Inspector (Web Designer Tools)</li>
+          <li class="list-group-item">Cascading Style Sheets (CSS)</li>
+          <li class="list-group-item">Link Colors and Bookmarks as Links to Same Page Elements</li>
+          <li class="list-group-item">Chapter 3 Quiz</li>
+        </ul>
+        <h3 class="text-secondary chapter-header">Chapter 4 - HTML and CSS</h3>
+        <ul class="list-group chapter-content">
+          <li class="list-group-item">Nav Tag and Classes</li>
+          <li class="list-group-item">Semantic Elements</li>
+          <li class="list-group-item">ID and Classes. Tables. Margin and Padding.</li>
+          <li class="list-group-item">Chapter 4 Quiz</li>
+        </ul>
+        <h3 class="text-secondary chapter-header">Chapter 5 - HTML and CSS</h3>
+        <ul class="list-group chapter-content">
+          <li class="list-group-item">HTML Form</li>
+          <li class="list-group-item">Conclusion</li>
+          <li class="list-group-item">Chapter 5 Quiz</li>
+        </ul>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <script>
+   const chapterHeaders = document.querySelectorAll(".text-secondary");
+
+chapterHeaders.forEach(header => {
+  const button = document.createElement("button");
+  button.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="20" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>';
+  button.style.display = "inline-block";
+  button.style.marginLeft = "5px";
+  button.style.float = "right";
+  header.appendChild(button);
+
+  const chapterContent = header.nextElementSibling;
+  chapterContent.style.display = "none";
+
+  button.addEventListener("click", function() {
+    if (chapterContent.style.display === "none") {
+      chapterContent.style.display = "block";
+    } else {
+      chapterContent.style.display = "none";
+      button.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>';
+    }
+  });
+});
+
+  </script>
+
+
+  
+  
+  
