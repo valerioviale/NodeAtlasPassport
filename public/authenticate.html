@@ -9,7 +9,7 @@
     <title>Corsi di Programmazione</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/album/">
-    <link href="styles.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
     <link href="signin.css" rel="stylesheet">
 
 
@@ -45,7 +45,7 @@
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-light" style="background-color: #ffffff; color: white;" >
     <div class="container-fluid" style="padding: 1px; margin: 20px; ">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" onclick="toggleNav()" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -73,6 +73,16 @@
 </header>
 
 
+<script>
+  function toggleNav() {
+    const navbarContent = document.getElementById("navbarSupportedContent");
+    if (navbarContent.style.display === "block") {
+      navbarContent.style.display = "none";
+    } else {
+      navbarContent.style.display = "block";
+    }
+  }
+</script>
   <main class="form-signin">
   
 

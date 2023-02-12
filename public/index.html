@@ -43,7 +43,7 @@
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-light" style="background-color: #FFFAFA	; color: white;" >
     <div class="container-fluid" style="padding: 1px; margin: 20px;">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" onclick="toggleNav()" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -69,6 +69,16 @@
   </nav>
 
 
+  <script>
+    function toggleNav() {
+      const navbarContent = document.getElementById("navbarSupportedContent");
+      if (navbarContent.style.display === "block") {
+        navbarContent.style.display = "none";
+      } else {
+        navbarContent.style.display = "block";
+      }
+    }
+  </script>
   
   
 </header>
