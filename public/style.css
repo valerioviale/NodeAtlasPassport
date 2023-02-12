@@ -51,8 +51,8 @@ section p {
 button {
   border-radius: 20px !important;
   margin: 0.5px !important;
-  background-color: #525253 !important;
-  border-color: #0b0b0b !important;
+  background-color: #1592ff !important;
+  border-color: #1592ff !important;
   color: #ffffff !important;
   display: inline-block !important;
   padding: 0 10px !important;
@@ -126,4 +126,11 @@ h3.text-secondary.chapter-header {
 div.container {
   padding-top: 30px !important;
   padding-bottom: 30px !important;
+}
+
+a.btn.btn-dark {
+  background-color: #1592ff !important;
+  border-color: #1592ff !important;
+  color: #ffffff !important;
+
 }
