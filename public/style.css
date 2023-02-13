@@ -51,8 +51,8 @@ section p {
 button {
   border-radius: 20px !important;
   margin: 0.5px !important;
-  background-color: #1592ff !important;
-  border-color: #1592ff !important;
+  background-color: #55a8de !important;
+  border-color: #55a8de !important;
   color: #ffffff !important;
   display: inline-block !important;
   padding: 0 10px !important;
@@ -129,15 +129,15 @@ div.container {
 }
 
 a.btn.btn-dark {
-  background-color: #1592ff !important;
-  border-color: #1592ff !important;
+  background-color: #55a8de !important;
+  border-color: #55a8de !important;
   color: #ffffff !important;
 
 }
 
 a.btn.btn-ligth {
-  background-color: #1592ff !important;
-  border-color: #1592ff !important;
+  background-color: #55a8de !important;
+  border-color: #55a8de !important;
   color: #ffffff !important;
 
 }
