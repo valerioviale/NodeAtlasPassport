@@ -5,15 +5,16 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const app = express();
 
+
+
 const bcrypt = require('bcrypt');
 const mongoose = require('mongoose');
 const User = require('./user');
 const port = process.env.PORT || 8080;
 
 
-
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
 
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -31,9 +32,9 @@ mongoose.connect(mongo_uri, function (err) {
 app.post('/register', function (req, res) {
     const { firstName, lastName, username, password } = req.body;
 
-    const user = new User({ firstName, lastName, username, password });
+const user = new User({ firstName, lastName, username, password });
 
-    user.save(err => {
+user.save(err => {
         if (err) {
             res.status(500).send('error for user registration');
         } else {
