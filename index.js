@@ -1,4 +1,5 @@
 //declaring const express, path, bodyParser, app
+require('dotenv').config();
 const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
@@ -16,7 +17,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-const mongo_uri = 'mongodb+srv://mongo:carnival@cluster0.2kd43gq.mongodb.net/test?retryWrites=true&w=majority';
+const mongo_uri = process.env.mongo_uri;
 
 mongoose.connect(mongo_uri, function (err) {
     if (err) {
