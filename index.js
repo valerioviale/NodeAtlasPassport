@@ -59,9 +59,9 @@ app.post('/authenticate', function (req, res) {
       });
 });
 
-app.listen(3000, function () {
-    console.log('server started');
-})
+app.listen(port, function () {
+    console.log(`Server is running on port ${port}`);
+});
 module.exports = app;
 
 app.listen(port, () => {
