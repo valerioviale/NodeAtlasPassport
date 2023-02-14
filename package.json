@@ -1,14 +1,15 @@
 {
   "name": "nodeatlas",
   "version": "1.0.0",
-  "description": "",
+  "description": "nodeatlas testing",
   "engines": {
-    "node": "16.x"
+    "node": "14.x"
   },
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+
   },
   "keywords": [],
   "author": "",
@@ -23,7 +24,8 @@
     "express-session": "^1.17.3",
     "jsonwebtoken": "^9.0.0",
     "mongoose": "^6.9.1",
-    "passport-local": "^1.0.0"
+    "passport-local": "^1.0.0",
+    "nodemon": "^2.0.20"
   },
   "devDependencies": {
     "nodemon": "^2.0.20"
