@@ -64,6 +64,3 @@ app.listen(port, function () {
 });
 module.exports = app;
 
-app.listen(port, () => {
-    console.log(`Server is running on port ${port}`);
-  });
