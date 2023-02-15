@@ -3,7 +3,7 @@ const isLoggedIn = (req, res, next) => {
     if (req.session.user) {
       next();
     } else {
-      res.redirect('/login');
+      res.redirect('public/authenticate');
     }
   };
   
@@ -21,7 +21,7 @@ const isLoggedIn = (req, res, next) => {
   };
   
   // Routes accessible to all users
-  app.get('/', (req, res) => {
+  app.get('/public', (req, res) => {
     res.render('home');
   });
   
