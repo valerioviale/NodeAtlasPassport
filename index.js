@@ -14,6 +14,11 @@ const mongoose = require('mongoose');
 const User = require('./user');
 const port = process.env.PORT || 8080;
 
+//  This will call the authMiddleware function before the route logic is executed, 
+// allowing you to verify if the user is authenticated or not.
+
+
+  
 //Configures the app to use JSON and urlencoded middleware to parse incoming requests and...
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
