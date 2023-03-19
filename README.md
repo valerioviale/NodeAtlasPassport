@@ -1,6 +1,10 @@
 # NodeAtlasPassport
 
 API Server with Express and MongoDB
+
+You can find a deployed version on Vercel, the website is only demonstrative for the register and login capabilities:
+https://node-atlas-passport.vercel.app/
+
 This is a Node.js file that creates an API server using the Express framework and connects to a MongoDB database using Mongoose. 
 The API server has two endpoints: /register and /authenticate. The /register endpoint is used to register a new user, 
 and the /authenticate endpoint is used to authenticate an existing user.
